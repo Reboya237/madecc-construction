@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Project Details | MADECC Construction</title>
+<meta name="description" content="Detailed construction project by MADECC Construction">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MADECC Construction",
+  "image": "https://www.madecc.com/assets/images/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Yaounde",
+    "addressCountry": "CM"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 3.8480,
+    "longitude": 11.5021
+  },
+  "telephone": "+237683316486",
+  "url": "https://www.madecc.com"
+}
+</script>
+
+</head>
+
+<body>
+
+<header class="main-header">...</header>
+
+<section class="project-details container">
+  <h1 id="project-title"></h1>
+
+  <img id="project-image" class="project-hero">
+
+  <p id="project-description"></p>
+
+  <ul class="project-info">
+    <li><strong>Location:</strong> <span id="project-location"></span></li>
+    <li><strong>Year:</strong> <span id="project-year"></span></li>
+    <li><strong>Category:</strong> <span id="project-category"></span></li>
+  </ul>
+
+  <!-- AdSense-safe placement -->
+  <div class="adsense-slot">Advertisement</div>
+
+  <a href="contact.html" class="btn-primary">Start Similar Project</a>
+</section>
+
+<script src="assets/js/project-details.js"></script>
+<script>
+const data = {
+  "villa-yaounde": {
+    title: "Luxury Residential Villa",
+    image: "assets/images/project1.jpg",
+    description: "This luxury villa was designed with modern architecture, sustainable materials, and premium finishes.",
+    location: "Yaounde, Cameroon",
+    year: "2022",
+    category: "Residential"
+  }
+};
+
+const params = new URLSearchParams(window.location.search);
+const project = data[params.get("id")];
+
+if (project) {
+  document.getElementById("project-title").textContent = project.title;
+  document.getElementById("project-image").src = project.image;
+  document.getElementById("project-description").textContent = project.description;
+  document.getElementById("project-location").textContent = project.location;
+  document.getElementById("project-year").textContent = project.year;
+  document.getElementById("project-category").textContent = project.category;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>MADECC Construction | Professional Building & Engineering Services</title>
+
+<!-- SEO Meta -->
+<meta name="description" content="MADECC Construction provides professional building, civil engineering, renovation, and construction management services. Quality, reliability, and excellence guaranteed.">
+<meta name="keywords" content="Construction Company, Building Contractors, Civil Engineering, Renovation, MADECC Construction">
+<meta name="author" content="MADECC Construction">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+:root{
+  --primary:#f59e0b;
+  --secondary:#22c55e;
+  --dark:#020617;
+  --light:#f8fafc;
+  --gray:#94a3b8;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:linear-gradient(120deg,#020617,#020617);
+  color:var(--light);
+}
+
+/* Animated background */
+.bg-animation{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  background:
+    radial-gradient(circle at 20% 30%,rgba(245,158,11,.12),transparent 40%),
+    radial-gradient(circle at 80% 70%,rgba(34,197,94,.12),transparent 40%);
+  animation:bgMove 14s infinite alternate;
+}
+
+@keyframes bgMove{
+  from{transform:scale(1);}
+  to{transform:scale(1.15);}
+}
+
+/* Layout */
+header{
+  padding:90px 20px;
+  text-align:center;
+}
+
+header h1{
+  font-size:clamp(2.4rem,5vw,3.8rem);
+  font-weight:700;
+}
+
+header p{
+  max-width:800px;
+  margin:20px auto;
+  color:var(--gray);
+  line-height:1.9;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 34px;
+  background:var(--primary);
+  color:#000;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+  margin-top:25px;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:var(--secondary);
+  color:#fff;
+}
+
+section{
+  padding:90px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+section h2{
+  font-size:2.3rem;
+  margin-bottom:20px;
+  text-align:center;
+}
+
+section p{
+  max-width:950px;
+  margin:auto;
+  text-align:center;
+  color:var(--gray);
+  line-height:1.9;
+}
+
+/* Cards */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin-top:50px;
+}
+
+.card{
+  background:rgba(255,255,255,.05);
+  border-radius:22px;
+  padding:32px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  background:rgba(255,255,255,.08);
+}
+
+.card h3{
+  color:var(--primary);
+  margin-bottom:10px;
+}
+.card, .btn, .floating{
+  will-change: transform;
+}
+
+/* Skills */
+.skill{margin-bottom:16px;}
+.skill span{display:block;margin-bottom:6px;}
+.bar{
+  background:#1e293b;
+  border-radius:12px;
+  overflow:hidden;
+}
+.bar div{
+  height:10px;
+  background:linear-gradient(to right,var(--primary),var(--secondary));
+}
+
+/* Footer */
+footer{
+  background:#020617;
+  padding:50px 20px;
+  border-top:1px solid rgba(255,255,255,.1);
+  text-align:center;
+}
+footer p{color:var(--gray);}
+
+/* Floating buttons */
+.floating{
+  position:fixed;
+  z-index:999;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  color:#fff;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.whatsapp{
+  bottom:68px;
+  right:25px;
+  background:#25d366;
+}
+
+.call{
+  bottom:68px;
+  left:25px;
+  background:#0ea5e9;
+}
+.map-container{
+  margin-top:40px;
+  width:100%;
+  height:420px;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.map-container iframe{
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+
+.floating:hover{transform:scale(1.1);
+}
+
+
+/* HEADER */
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #fa030fe0;
+}
+</style>
+
+<!-- LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ConstructionCompany",
+  "name": "MADECC Construction",
+  "url": "https://madeccconstruction.com",
+  "logo": "https://madeccconstruction.com/logo.png",
+  "telephone": "+237683316486",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "NG"
+  },
+  "areaServed": "Nigeria",
+  "sameAs": [
+    "https://wa.me/237683316486"
+  ]
+}
+</script>
+
+<!-- Project / Portfolio Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "MADECC Construction Projects",
+  "creator": {
+    "@type": "Organization",
+    "name": "MADECC Construction"
+  },
+  "about": "Commercial buildings, residential projects, renovations, and civil engineering works."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What services does MADECC Construction offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MADECC Construction offers residential and commercial construction, renovations, civil engineering works, and full project management services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a construction project take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Project duration depends on size, complexity, and materials. A clear timeline is provided after assessment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does MADECC Construction serve multiple locations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, MADECC Construction serves multiple regions across Nigeria."
+      }
+    }
+  ]
+}
+</script>
+
+</head>
+<header class="main-header">
+  <div class="container nav-wrap">
+    <img src="assets/images/logo.jpg" alt="MADECC Construction Logo" class="logo">
+  </div>
+</header>
+<body>
+
+<div class="bg-animation"></div>
+
+<header>
+  <h1>MADECC Construction</h1>
+  <p>
+    We deliver professional construction, civil engineering, renovation, and project
+    management services with a commitment to quality, safety, and long-term value.
+  </p>
+  <a href="contact.html" class="btn">Request a Quote</a>
+</header>
+
+<section>
+  <h2>About MADECC</h2>
+  <p>
+    MADECC Construction is a trusted construction company specializing in residential,
+    commercial, and infrastructure projects. We combine technical expertise, modern
+    construction methods, and strict quality control to deliver reliable results.
+  </p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Building Construction</h3>
+      <p>Residential and commercial construction executed with precision and compliance.</p>
+    </div>
+    <div class="card">
+      <h3>Renovation & Remodeling</h3>
+      <p>Modern upgrades, structural improvements, and interior renovations.</p>
+    </div>
+    <div class="card">
+      <h3>Project Management</h3>
+      <p>End-to-end planning, supervision, budgeting, and delivery.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Portfolio Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Commercial Complex</h3>
+      <p>Multi-storey commercial building completed with modern engineering standards.</p>
+    </div>
+    <div class="card">
+      <h3>Residential Estate</h3>
+      <p>High-quality residential housing development.</p>
+    </div>
+    <div class="card">
+      <h3>Infrastructure Works</h3>
+      <p>Roads, drainage systems, and civil engineering projects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact MADECC</h2>
+  <p>
+    Need a reliable construction partner? Call or WhatsApp us today for professional consultation.
+  </p>
+</section>
+<section id="location">
+  <h2>Our Office Location</h2>
+  <p>
+    Visit MADECC Construction or locate us easily on Google Maps for consultations
+    and project discussions.
+  </p>
+
+  <div class="map-container">
+    <iframe
+      loading="lazy"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961.19226985619!2d11.487648163274752!3d3.896383394941736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcff0d23b430d%3A0x6e5c797f8a468176!2sMADECC!5e0!3m2!1sen!2scm!4v1768866802298!5m2!1sen!2scm"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+<section id="faqs">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>What services does MADECC Construction offer?</h3>
+      <p>
+        We provide residential and commercial construction, renovations,
+        civil engineering works, and complete project management services.
+        You can also contact us directly via WhatsApp for consultations.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>How long does a construction project take?</h3>
+      <p>
+        Project timelines depend on size, design, and materials.
+        After assessment, we provide a clear schedule and milestones.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Do you operate outside your main location?</h3>
+      <p>
+        Yes, MADECC Construction serves multiple regions across Nigeria.
+        Contact us on WhatsApp to confirm availability in your area.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!--footer section-->
+    <footer>
+        <p>&copy; 2026 MADECC Construction. All rights reserved.| 
+            <a href="privacy_policy.html" target="_blank">Privacy_policy</a> | 
+            <a href="T&Cs.html" target="_blank">T&Cs</a></p>
+    <nav class="footer-links">
+            <a href="services.html" target="_blank">Construction Services</a>
+            <a href="projects.html" target="_blank">Project Portfolio</a>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="faq.html" target="_blank">FAQ</a>
+            <a href="cookies_policy.html" target="_blank">cookies_policy</a>
+            <a href="about.html" target="_blank">About MADECC</a>
+            <a href="testimonials.html" target="_blank">Testimonials</a>
+            <a href="T&Cs.html" target="_blank">Terms Of Service</a>
+            <a href="privacy_policy.html" target="_blank">privacy_policy</a>
+            <a href="contact.html" target="_blank">Contact Us</a>
+            <a href="blog.html" target="_blank">Construction Blog</a>
+    </nav>
+    </footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/237683316486" class="floating whatsapp" aria-label="Chat on WhatsApp">💬</a>
+
+<!-- Floating Call Button -->
+<a href="tel:+237683316486" class="floating call" aria-label="Call MADECC">📞</a>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+
+</body>
+</html>
