@@ -106,14 +106,19 @@
 
 <!-- ================= HERO BACKGROUND VIDEO ================= -->
 <section class="hero-video">
-  <!-- Background Video -->
-  <video autoplay muted loop playsinline id="hero-bg-video">
-    <source src="https://youtu.be/EJMGG_f2Ejs?si=YlgLCTWVaoCfDVeF" type="video/mp4">
-  </video>
+
+  <!-- Background Video (YouTube Embed) -->
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/EJMGG_f2Ejs?autoplay=1&mute=1&loop=1&playlist=EJMGG_f2Ejs&controls=0&showinfo=0&rel=0"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
 
   <!-- Overlay to darken video -->
   <div class="hero-overlay"></div>
-
   <!-- Hero Content -->
   <div class="hero-content" data-aos="fade-up">
         <h1>Building Reliable Infrastructure for a Growing Cameroon with Quality & Precision</h1>
@@ -288,4 +293,5 @@
 </body>
 
 </html>
+
 
